@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <script type="text/javascript">
+      // Single Page App for GitHub Pages
+      // https://github.com/rafrex/spa-github-pages
+      // Copyright (c) 2016 Rafael Pedicini, licensed under the MIT License
+      // ----------------------------------------------------------------------
+      // This script takes the current url and converts the path and query
+      // string into just a query string, and then redirects the browser
+      // to the new url with only a query string and hash fragment,
+      // e.g. http://www.foo.tld/one/two?a=b&c=d#qwe, becomes
+      // http://www.foo.tld/?p=/one/two&q=a=b~c=d#qwe
+      // Note: this only works in HTML5 compatible browsers
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, -1).join('/') + '/#' +
+        l.search.slice(1).replace(/&/g, '~').replace(/=/g, '-') + '#' +
+        l.hash.slice(1)
+      );
+    </script>
+  </head>
+  <body>
+    <h1>Redirecting...</h1>
+  </body>
+</html>
