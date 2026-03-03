@@ -1,4 +1,6 @@
-# Welcome to your Lovable project
+# m3am3a - Local Food Delivery App
+
+A modern React-based food delivery application built with Vite, TypeScript, and shadcn-ui.
 
 ## Project info
 
@@ -24,10 +26,10 @@ Follow these steps:
 
 ```sh
 # Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+git clone https://github.com/tojizeninpro-ship-it/m3am3a.git
 
 # Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+cd m3am3a
 
 # Step 3: Install the necessary dependencies.
 npm i
@@ -59,6 +61,9 @@ This project is built with:
 - React
 - shadcn-ui
 - Tailwind CSS
+- Supabase (backend/database)
+- React Router (navigation)
+- React Query (state management)
 
 ## How can I deploy this project?
 
